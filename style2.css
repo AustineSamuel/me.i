@@ -1,0 +1,197 @@
+:root{
+  --bg:rgb(15, 12, 36);
+  --black:rgb(24, 1, 43);
+  --ylw:rgb(255, 217, 0);
+  --blackB:rgb(22, 0, 43);
+  --bgB:rgb(15, 2, 36);
+}
+*{
+  color:white;
+}
+#body{
+  background:var(--bg);
+}
+#box{
+  width:100%;
+  background:var(--bgB);
+}
+#nav{
+  background:var(--black);
+  border-bottom:1px solid rgb(124, 124, 124);
+}
+
+#navCtn{
+  background:var(--black);
+}
+#nav *{
+  color:rgb(245, 245, 245);
+}
+#top{
+  min-height:200px;
+  background-color:rgb(22, 0, 43);
+  border-bottom:1px solid red;
+}
+#hrF{
+  border:none;
+border-top:1px solid rgb(168, 168, 168);
+background:var(--black);
+padding:0;
+margin:0;
+margin-top:2px;
+}
+#top *{
+  color:white;
+}
+#top #name{
+  width:100%;
+  font-weight:bolder;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#top #name *{
+  font-weight:bolder;
+ 
+}
+#top #name .content{
+  font-size:large;
+}
+#top #action {
+  width:100%;
+}
+#top #action button{
+  word-break:keep-all !important;
+
+  min-width:100px !important;
+  background:Red;
+  
+}
+#cloud{
+  height:102px;
+}
+#cloud b{
+ font-family:cursive;
+ }
+#image{
+  width:100px;
+  height:100px;
+  position:relative;
+  overflow:hidden;
+animation:image 2s infinite;
+ }
+#image:after{
+  content:"";
+  background:var(--bg);
+  height:100px;
+  width:100px;
+  transform:rotate(45deg);
+  display: block;
+  animation:image 2s infinite;
+  }
+  h2,h3{
+    font-weight:bolder;
+    border-bottom:1px solid rgb(240, 235, 222);
+    background:var(--bgB);
+    
+  }#hang{
+    width:20px;
+    height:20px;
+    border-radius:10px;
+background:red;
+border:1px solid var(--ylw);
+color:white;
+display:flex !important;
+align-items:center;
+justify-content:center;
+margin:10px 10px;
+  }
+  #hang:hover{
+    background:var(--ylw);
+  }
+  #hang span{
+    margin-top:-20px;
+  }
+
+
+  
+  .Ctn{
+    width:90%;
+      border-radius:10px;
+    background:var(--bgB);
+    margin:0 auto;
+    box-shadow:1px 1px 20px 0px rgb(0, 0, 0);
+    border-top:1px solid var(--ylw);
+  }
+  .Ctn i{
+    font-family:cursive;
+    color:rgb(255, 51, 0);
+  }
+  .Ctn i .fa{
+    color:rgb(4, 0, 255);
+  
+  }
+  button{
+    border-radius:2px;
+  }
+  .Ctn section{
+    color:rgb(79, 79, 99);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  #shareBtn{
+  background:red;
+  color:white;
+  margin-lefT:40%;
+  }
+  #services h4 b{
+    color:rgb(255, 95, 2);
+    text-decoration:underline;
+  }
+  #services{
+    background:linear-gradient(rgb(42, 6, 58),var(--bgB));
+    border-radius:10px;
+    box-shadow:1px 1px 10px 0px black;
+  }
+  #services section img{
+    width:50px;
+    height:50px;
+    background-color:rgb(88, 78, 78);
+  }
+  section #large{
+    font-size:large;
+  }
+  @keyframes image{
+    0%{
+      width:100px;
+      height:100px;    
+    }
+    100%{
+      width:90px;
+      height:90px;
+    }
+  }
+  #whyMe{
+    flex-flow:row wrap;
+    display:flex;
+    align-items:space-around;
+    justify-content:space-around;
+    width:100%;
+    background:var(--bg);
+  }
+  #whyMe div{
+    width:40%;
+    text-align:center;
+      word-break:break-all;
+margin-top:10px;
+  }
+  #whyMe div b{
+    word-break:break-word;
+  }
+  #whyMe div .fa{
+    font-size:xx-large;
+  }
+@media screen and (min-width:450px){
+  #top #name{
+    width:80%;
+  }
+  #top #action{
+    width:20%;
+  }
+}
